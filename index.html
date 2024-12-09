@@ -1,44 +1,40 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Daiana Stefani Luzmila">
-    <meta name="keywords" content="Cursos intensivos, inglés, Brighton Institute, clases reducidas, clases online">
-    <title>Brighton Institute</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="logo-brighton.png" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <div class="header">
-            <img src="logo.png" alt="Logo Brighton Institute" class="logo">
-            <div class="texto-header">
-                <h1>Brighton Institute</h1>
-                <h2>"Abre puertas al mundo, un idioma a la vez"</h2>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brighton Institute">
+        <meta name="keywords" content="Cursos intensivos, inglés, clases reducidas, online, Brighton Institute">
+        <title>Brighton Institute</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <!-- Encabezado -->
+        <header>
+            <div class="header">
+                <img src="logo.png" alt="Logo Brighton Institute" class="logo">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#metodologia">Metodología</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </header>
-    
-    <!-- Menú principal -->
-    <nav>
-        <ul id="menu">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#metodologia">Metodología</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+        </header>
 
-    <!-- Contenido principal -->
-    <main>
-        <section id="inicio">
-            <h2>Inicio</h2>
+        <!-- Inicio -->
+        <section id="inicio" class="hero-section">
+            <h1>Brighton Institute</h1>
+            <h2>Abre puertas al mundo, un idioma a la vez</h2>
             <p>Bienvenidos a <strong>Brighton Institute</strong>, donde potenciamos tu inglés con cursos intensivos y clases personalizadas durante el año 2025. ¡Inscríbete ahora y asegura tu lugar!</p>
-            <img src="banner-cursos.png" alt="Banner de Cursos Intensivos" class="imagen-principal">
+            <button onclick="location.href='#contacto'">¡Contáctanos!</button>
         </section>
 
-        <section id="cursos">
+        <!-- Cursos -->
+        <section id="cursos" class="courses-section">
             <h2>Nuestros Cursos</h2>
             <p>Cupos <strong>reducidos</strong> para la efectividad del aprendizaje. Grupos de <strong>5 a 6 personas</strong>.</p>
             <ul>
@@ -47,9 +43,11 @@
                 <li><strong>Duración:</strong> 4 horas semanales</li>
                 <li><strong>Niveles:</strong> Starter A1, A2, B1</li>
             </ul>
+            <p><strong>¡Descuento especial!</strong> Si se anotan <strong>2 personas</strong>, reciben un <strong>10% de descuento</strong> en el costo total del curso.</p>
         </section>
 
-        <section id="metodologia">
+        <!-- Metodología -->
+        <section id="metodologia" class="methodology-section">
             <h2>Metodología</h2>
             <p>Nuestras clases son dinámicas y prácticas, con actividades enfocadas en:</p>
             <ul>
@@ -58,9 +56,12 @@
                 <li>Lectura y gramática</li>
                 <li>Juegos interactivos</li>
             </ul>
+        </section>
 
-            <!-- Clases Online -->
-            <h3>Clases Online</h3>
+        <!-- Eslogan -->
+        <section id="eslogan">
+            <h2>Clases Online</h2>
+            <h3></h3>
             <p>Ofrecemos la posibilidad de acceder a nuestras clases de manera virtual, permitiendo a los estudiantes participar desde cualquier lugar. Las clases online incluyen:</p>
             <ul>
                 <li>Plataforma de videollamadas en tiempo real</li>
@@ -70,19 +71,87 @@
             </ul>
             <p><strong>¡Aprende inglés desde la comodidad de tu hogar con la misma calidad y compromiso!</strong></p>
         </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>¡Reserva tu lugar hoy mismo!</p>
-            <p>📞 <strong>Sofi:</strong> +54 3751 123456</p>
-            <p>📧 <strong>Email:</strong> contacto@brightoninstitute.com</p>
-            <p>📍 Ubicación: Brighton Institute, Eldorado</p>
+        <section class="advertisement-section">
+            <h2>Publicidades de Inglés</h2>
+            <div class="advertisement">
+                <div class="advertisement-item">
+                    <img src="1.png" alt="Publicidad 1">
+                    <p>¡Aprende inglés de manera fácil y divertida!</p>
+                    <a href="#">Más información</a>
+                </div>
+                <div class="advertisement-item">
+                    <img src="2.png" alt="Publicidad 2">
+                    <p>Clases de inglés para todos los niveles.</p>
+                    <a href="#">Ver cursos</a>
+                </div>
+                <div class="advertisement-item">
+                    <img src="3.png" alt="Publicidad 3">
+                    <p>Mejora tu inglés con nuestros programas exclusivos.</p>
+                    <a href="#">Descúbrelo ahora</a>
+                </div>
+            </div>
         </section>
-    </main>
+    <!-- Contacto -->
+    <section id="contacto" class="contact-section">
+        <h2>Datos personales</h2>
+        <p>¡Reserva tu lugar hoy mismo!</p>
+        <p>📞 <strong>Teacher Sofi:</strong> +5491165000975</p>
+        <p>📧 <strong>Email:</strong> brightonins.bysofi@gmail.com</p>
+        <p>📍 Instagram: @brighton_institute</p>
+    </section>
 
+        <!-- Contacto -->
+        <section id="contacto" class="contact-section">
+            <h2>Contáctanos</h2>
+
+            <form class="contact-form" action="https://formspree.io/f/mkgnabwd" method="POST">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre y apellido" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="_replyto" placeholder="Tu correo electrónico" required>
+
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono" required>
+
+                <label for="course">¿Qué nivel de curso te interesa?</label>
+                <select id="course" name="course">
+                    <option value="starter">Starter A1</option>
+                    <option value="elementary">Elementary A2</option>
+                    <option value="intermediate">Intermediate B1</option>
+                </select>
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Escribe tu consulta aquí..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Brighton Institute. Todos los derechos reservados.</p>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Brighton Institute Logo">
+                </div>
+                <p>&copy; 2024 Brighton Institute. Todos los derechos reservados.</p>
+                <p>📞 Teacher Sofi: +5491165000975 | 📧 brightonins.bysofi@gmail.com</p>
+            <div class="footer-content">
+                <div class="social-links">
+                    <!-- Íconos con enlaces a WhatsApp, Instagram y Gmail -->
+                    <a href="https://wa.me/5491165000975" target="_blank" class="social-icon">
+                        <img src="whasa.png" alt="WhatsApp" />
+                    </a>
+                    <a href="https://www.instagram.com/tu_usuario" target="_blank" class="social-icon">
+                        <img src="insta.png" alt="Instagram" />
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=brightonins.bysofi@gmail.com&su=Consulta&body=Hola,%20me%20interesa%20más%20información." target="_blank" class="social-icon">
+                        <img src="gmail.png" alt="Gmail" />
+                    </a>                             
+                </div>
+            </div>
+        </div>
     </footer>
-</body>
-</html>
+    </body>
+    </html>
