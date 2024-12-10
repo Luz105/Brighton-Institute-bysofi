@@ -1,8 +1,7 @@
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 body {
@@ -286,24 +285,26 @@ footer::after {
     background: linear-gradient(to right, #b8e1dd, #fadf7f);
     opacity: 0.4;
 }
-/* Sección de Publicidades de Inglés */
+
+/* Sección de Publicidades */
 .advertisement-section {
-    background-color: #f8f9fa; /* Fondo uniforme con el resto del sitio */
     padding: 50px 20px;
     margin: 30px auto;
-    width: 90%;
+    width: 990%;
     max-width: 1000px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    text-align: center; /* Centra el contenido */
+    text-align: center;
+    background-color: transparent; /* Fondo eliminado */
 }
 
 .advertisement-section h2 {
     font-size: 2.5rem;
-    color: #333333; /* Texto más oscuro */
+    color: #4d4c4a; /* Color oscuro */
     margin-bottom: 25px;
-    text-transform: uppercase; /* Texto en mayúsculas */
+    text-transform: uppercase;
     letter-spacing: 1.5px;
+    border-bottom: 3px solid #fadf7f; /* Línea decorativa */
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
 .advertisement {
@@ -313,48 +314,52 @@ footer::after {
     flex-wrap: wrap;
 }
 
-.advertisement .advertisement-item {
+.advertisement-item {
     width: 30%;
-    background-color: #ffffff; /* Fondo blanco para las tarjetas */
-    border: 2px solid #dee2e6; /* Borde gris suave */
-    border-radius: 10px;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #dee2e6;
+    border-radius: 10px; /* Bordes redondeados en las tarjetas */
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.advertisement .advertisement-item:hover {
+.advertisement-item:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.advertisement .advertisement-item img {
+.advertisement-item img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
 }
 
-.advertisement .advertisement-item p {
+.advertisement-item p {
     font-size: 1rem;
     color: #555555;
     margin-bottom: 15px;
+    line-height: 1.5;
 }
 
-.advertisement .advertisement-item a {
+.advertisement-item a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #17a2b8; /* Botón principal azul */
-    color: #ffffff; /* Texto blanco */
+    background-color: #b8e1dd; /* Verde pastel */
+    color: #4a4a4a;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.advertisement .advertisement-item a:hover {
-    background-color: #138496; /* Oscurece el color del botón */
+.advertisement-item a:hover {
+    background-color: #fadf7f; /* Amarillo pastel */
+    transform: scale(1.05);
 }
+
 
 
 .advertisement .advertisement-item img {
